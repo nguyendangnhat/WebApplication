@@ -1,0 +1,14 @@
+﻿
+
+@if (Request.IsAuthenticated)
+{
+   
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right sk-top-nav-left" style="position: relative;z-index: 9;">
+        <li><i class="fa fa-user"></i>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li><i class="fa fa-user-plus"></i>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}
+
